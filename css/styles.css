@@ -223,7 +223,10 @@ a {
 
 .btn--small {
     background-color: var(--color-secondary);
-    font-size: 15px;
+    font-size: 1rem;
+    color: white;
+    padding:1rem 1rem;
+    border-radius: 25px;
 }
 
 .btn--accent:hover {
@@ -239,6 +242,11 @@ a {
 .btn--outline:hover {
     background-color: var(--color-headings);
     color: #fff;
+}
+
+.btn--stretched {
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .btn--block {
@@ -493,5 +501,47 @@ a {
 
     .testimonials .quote {
         margin-left: 5rem;
+    }
+}
+
+/* callouts */
+.callout {
+    padding: 3rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.callout__content {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.callout__heading {
+    color: white;
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 550px) {
+    .callout .grid__cols-2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
     }
 }
