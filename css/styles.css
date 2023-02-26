@@ -429,3 +429,20 @@ a {
         font-size: 1.1rem;
     }
 }
+
+/* grids */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width:500px) {
+    .grid__cols-2 {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (min-width:730px) {
+    .grid__cols-3 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
