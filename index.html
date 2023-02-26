@@ -9,10 +9,41 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <div class="grid grid__cols-3">
-      <div style="height: 100px; background: rosybrown"></div>
-      <div style="height: 100px; background: steelblue"></div>
-      <div style="height: 100px; background: linen"></div>
+    <div class="card testimonials">
+      <div class="grid grid__cols-2">
+        <div class="testimonial__image">
+          <img
+            src="./images/testimonial.jpg"
+            alt="A female happy, smiling customer."
+          />
+          <span class="icon-container icon-container--accent">
+            <svg class="icon--small icon--other-color">
+              <use xlink:href="images/sprite.svg#quotes"></use>
+            </svg>
+          </span>
+        </div>
+        <blockquote class="quote">
+          <p class="quote__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+            minima commodi ad hic. Iste.
+          </p>
+          <footer>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary quote__line">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="quote__author">Marine Mary</h3>
+                <p class="quote__company">
+                  Male Reversed Company & Organization
+                </p>
+              </div>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
     </div>
   </body>
 </html>
