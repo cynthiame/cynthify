@@ -29,6 +29,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -233,8 +234,13 @@ a {
     border-radius: 25px;
 }
 
-.btn--accent:hover {
+.btn--accent {
     background: #ec3000;
+    color: white;
+}
+
+.btn--accent:hover {
+    background:darkred;
 }
 
 .btn--outline {
@@ -586,6 +592,8 @@ a {
 .block {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
+    height: 100vh;
+    width: 100vw;
 }
 
 .block__header {
@@ -593,7 +601,7 @@ a {
 }
 
 .block__heading {
-    margin-top: 0;;
+    margin-top: 0;
 }
 
 .block--dark {
@@ -681,5 +689,32 @@ a {
     .nav__item {
         border: 0;
         padding-left: 0.2rem;
+    }
+}
+
+/* hero */
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 0.2rem;
+    margin: 3rem 0 4rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+@media screen and (min-width:700px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero__content {
+        text-align: left;
+        align-self: center;
     }
 }
