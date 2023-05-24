@@ -1,0 +1,2 @@
+# cynthify
+A simple website
